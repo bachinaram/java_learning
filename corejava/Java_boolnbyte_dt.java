@@ -1,0 +1,10 @@
+class Java_boolnbyte_dt{
+    public static void main(String args[]){
+        boolean flag=true;
+        System.out.println(flag);
+
+        byte some_range = 127;
+        System.out.println(some_range);
+        System.out.println("byte can hold value from -128 to 127 because its 8 bits");
+    }
+}
