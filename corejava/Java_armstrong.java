@@ -35,6 +35,7 @@ public class Java_armstrong {
         int input = obj.nextInt();
         int count = int_count(input);
         isArmstrong(input,count);
+        obj.close();
         //System.out.println(count);
    } 
 }

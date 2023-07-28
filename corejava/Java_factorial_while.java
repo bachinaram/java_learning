@@ -12,5 +12,6 @@ class Java_factorial_while{
         }
         while(fact>=1);
         System.out.println(result);
+        input.close();
     }
 }

@@ -9,5 +9,6 @@ public class Java_userinp_scanner {
 
         String mystring = input.next();
         System.out.println("you have entered the string " + mystring);
+        input.close();
     }
 }

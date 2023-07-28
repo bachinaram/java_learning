@@ -10,5 +10,6 @@ public class Java_multiplicationtable {
             i++;
         }
         while(i<=10);
+        obj.close();
     }
 }

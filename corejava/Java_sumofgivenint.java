@@ -13,5 +13,6 @@ public class Java_sumofgivenint {
         }
         while(number!=0);
         System.out.println(result);
+        input.close();
     }
 }
