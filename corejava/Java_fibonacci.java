@@ -13,5 +13,6 @@ public class Java_fibonacci{
             prev_num=next_num;
             System.out.println(next_num);
         }
+        obj.close();
     }
 }
