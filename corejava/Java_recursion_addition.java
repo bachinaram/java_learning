@@ -19,7 +19,7 @@ public class Java_recursion_addition {
             return a;
         }
         else{
-            return sum(--a,++b);
+            return sum(++a,--b);
         }
     }
 }
