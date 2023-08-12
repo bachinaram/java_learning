@@ -15,5 +15,6 @@ public class Java_input_array {
             System.out.print(j+" ");
         }
         System.out.println();
+        obj.close();
     }
 }
