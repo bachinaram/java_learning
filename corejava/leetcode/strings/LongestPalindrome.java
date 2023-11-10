@@ -4,28 +4,46 @@ import java.util.Map;
 public class LongestPalindromeLength {
     public static int longestPalindrome(String s) {
         // Count occurrences of each character
-        Map<Character, Integer> charCount = new HashMap<>();
-        for (char c : s.toCharArray()) {
-            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+        int output =0;
+        if(s.length()<=1){
+            return 1;
         }
+        
+        else{
+            HashMap<Character, Integer> inp = new HashMap<>();
+            Character c = null;
+            
+            for(int i=0;i<s.length();i++){
+                c=s.charAt(i);
+                if(inp.containsKey(c)){
+                    inp.put(c,inp.get(c)+1);
+                }
+                else{
+                    inp.put(c,1);
+                }
+            }
 
-        // Calculate the length of the longest palindrome
-        int length = 0;
-        boolean hasOddCount = false;
-
-        for (int count : charCount.values()) {
-            length += (count / 2) * 2; // Include even counts
-            if (count % 2 != 0) {
-                hasOddCount = true; // Mark if there is an odd count
+            int one =0;
+            for(Map.Entry<Character, Integer> element : inp.entrySet()){
+                int temp = element.getValue();
+                if(inp.size() == 1){
+                    return temp;
+                }
+                else if(temp%2 == 0){
+                    output = output + temp;
+                }
+                else if(temp ==1 ){
+                    one = one + temp;
+                }
+                else{
+                    output = temp - 1;
+                }
+            }
+            if(one >= 1){
+                output = output + 1;
             }
         }
-
-        // Add one for a character with an odd count (can be placed in the middle)
-        if (hasOddCount) {
-            length += 1;
-        }
-
-        return length;
+        return output;
     }
 
     public static void main(String[] args) {
