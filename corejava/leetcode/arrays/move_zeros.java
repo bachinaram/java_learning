@@ -2,18 +2,13 @@ package leetcode.arrays;
 
 public class move_zeros {
     public static void moveZeros(int[] nums) {
-        int nonZeroIndex = 0;
-
-        // Iterate through the array and move non-zero elements to the front
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
-                // Swap non-zero element with the current nonZeroIndex
+        int left_pointer = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=0){
                 int temp = nums[i];
-                nums[i] = nums[nonZeroIndex];
-                nums[nonZeroIndex] = temp;
-
-                // Increment nonZeroIndex
-                nonZeroIndex++;
+                nums[i] = nums[left_pointer];
+                nums[left_pointer] = temp;
+                left_pointer++;
             }
         }
     }
