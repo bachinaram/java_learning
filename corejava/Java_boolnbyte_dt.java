@@ -5,6 +5,6 @@ class Java_boolnbyte_dt{
 
         byte some_range = 127;
         System.out.println(some_range);
-        System.out.println("byte can hold value from -128 to 127 because its 8 bits");
+        System.out.println("byte can hold value from -128 toooooo 127 because its 8 bits");
     }
 }
