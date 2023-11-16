@@ -14,6 +14,8 @@ public class querty_words {
                     if(row.indexOf(ch)== -1){
                         wordexists = false;
                         break;
+                        //commenting line
+                        
                     }
                 }
                 if(wordexists){
