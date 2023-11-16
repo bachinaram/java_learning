@@ -27,6 +27,7 @@ public class Java_armstrong {
             cnt_res++;
         }
         return cnt_res;
+        //comment
 
     }
     public static void main(String args[]){
