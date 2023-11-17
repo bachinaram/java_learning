@@ -3,6 +3,7 @@ public class Java_armstrong {
     public static void isArmstrong(int inp,int cnt){
         int rem;
         double res,output=0;
+        //commenting for extra variable
         int comp_inp=inp;
         do{
             rem=inp%10;

@@ -5,6 +5,7 @@ class Java_factorial_while{
         System.out.println("Enter the Factorial Number");
         int fact = input.nextInt();
         int result = 1;
+        //another comment herre
         System.out.print("Factorial of " + fact +" is: ");
         do{
             result = result * fact; 
