@@ -61,6 +61,8 @@ Explanation: "raceacar" is not a palindrome.
 Example 3:
 
 Input: s = " "
+Input s= "0P"
+
 Output: true
 Explanation: s is an empty string "" after removing non-alphanumeric characters.
 Since an empty string reads the same forward and backward, it is a palindrome.
