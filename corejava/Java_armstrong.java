@@ -4,6 +4,7 @@ public class Java_armstrong {
         int rem;
         double res,output=0;
         //commenting for extra variable
+        //new comment
         int comp_inp=inp;
         do{
             rem=inp%10;
