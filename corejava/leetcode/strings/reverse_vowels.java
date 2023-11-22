@@ -1,4 +1,4 @@
-package practice;
+package leetcode.strings;
 
 public class reverse_vowels {
     public static String vowelReverse(String str){
